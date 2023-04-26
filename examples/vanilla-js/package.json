@@ -1,0 +1,27 @@
+{
+  "name": "experiment-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && rollup -c rollup.config.js --compact && cp node_modules/@magieno/web-sqlite/dist/bundle/web-sqlite-worker.js public_html/scripts/web-sqlite-worker.js && cp -r node_modules/@magieno/web-sqlite/dist/third_party/sqlite/3.41.2/* public_html/scripts/",
+    "start:server": "serve public_html -c ../serve.json "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@magieno/web-sqlite": "^0.0.1-test-003"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^3.16.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-ignore": "^1.0.10",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "serve": "^14.2.0"
+  }
+}
