@@ -5,4 +5,3 @@ This repository contains demos and examples about how to use the [@magieno/web-s
 ## Examples
 The examples folder contains a list of examples:
 * [Vanilla Javascript](examples/vanilla-js/README.md)
-* [Angular](examples/angular)
