@@ -42,5 +42,5 @@ testem.log
 Thumbs.db
 
 **/*/node_modules/*
-*/dist/
+**/*/dist/
 **/*/public_html/scripts
