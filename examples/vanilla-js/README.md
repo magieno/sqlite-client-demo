@@ -1,5 +1,5 @@
 # Vanilla Javascript demo
-This demo contains a very simple and straightforward example of how to use the `@magieno/web-sqlite` npm library.
+This demo contains a very simple and straightforward example of how to use the `@sqlite/sqlite-wasm` npm library.
 
 ## Steps
 To test it out for yourself, clone this repository and execute these steps:
