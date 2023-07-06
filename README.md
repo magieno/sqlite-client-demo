@@ -1,6 +1,6 @@
-# Web SQLite Demo
+# SQLite Wasm Demo
 
-This repository contains demos and examples about how to use the [@magieno/web-sqlite](https://www.npmjs.com/package/@magieno/web-sqlite) library.
+This repository contains demos and examples about how to use the [@sqlite/sqlite-wasm](https://github.com/tomayac/sqlite-wasm) library.
 
 ## Examples
 The examples folder contains a list of examples:
