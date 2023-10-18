@@ -5,13 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.json && rollup -c rollup.config.js --compact && cp node_modules/@magieno/web-sqlite/dist/bundle/web-sqlite-worker.js public_html/scripts/web-sqlite-worker.js && cp -r node_modules/@magieno/web-sqlite/dist/third_party/sqlite/3.41.2/* public_html/scripts/",
+    "build": "tsc -p tsconfig.json && rollup -c rollup.config.js --compact && cp node_modules/@magieno/sqlite-client/dist/bundle/sqlite-client-worker.js public_html/scripts/sqlite-worker.mjs && cp -r node_modules/@sqlite.org/sqlite-wasm/sqlite-wasm/jswasm/* public_html/scripts/",
     "start:server": "serve public_html -c ../serve.json "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@magieno/web-sqlite": "^0.0.1"
+    "@magieno/sqlite-client": "^3.43.2"
   },
   "devDependencies": {
     "typescript": "^5.0.4",

@@ -1,5 +1,9 @@
 # Vanilla Javascript demo
-This demo contains a very simple and straightforward example of how to use the `@sqlite/sqlite-wasm` npm library.
+This demo contains a very simple and straightforward example of how to use the `@sqlite.org/sqlite-wasm` npm library.
+
+## Dependencies
+* Typescript
+* Rollup
 
 ## Steps
 To test it out for yourself, clone this repository and execute these steps:

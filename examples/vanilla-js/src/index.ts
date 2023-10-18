@@ -1,10 +1,10 @@
-import {WebSqlite} from "@magieno/web-sqlite";
+import {SqliteClient} from "@magieno/sqlite-client";
 
 const bootstrap = async () => {
-  const webSqliteWorkerPath = "scripts/web-sqlite-worker.js"; // Must correspond to the path in your final deployed build.
+  const webSqliteWorkerPath = "scripts/sqlite-worker.mjs"; // Must correspond to the path in your final deployed build.
   const filename = "/test.sqlite3"; // This is the name of your database. It corresponds to the path in the OPFS.
 
-  const webSqlite = new WebSqlite(filename, webSqliteWorkerPath)
+  const webSqlite = new SqliteClient(filename, "c", webSqliteWorkerPath)
   await webSqlite.init();
 
   await webSqlite.executeSql("CREATE TABLE IF NOT EXISTS test(a,b)");
