@@ -11,10 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@magieno/sqlite-client": "^3.43.2"
+    "@magieno/sqlite-client": "^3.43.2",
+    "@sqlite.org/sqlite-wasm": "^3.45.1-build1"
   },
   "devDependencies": {
-    "typescript": "^5.0.4",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
@@ -22,6 +22,7 @@
     "rollup-plugin-cleanup": "^3.2.1",
     "rollup-plugin-ignore": "^1.0.10",
     "rollup-plugin-typescript2": "^0.34.1",
-    "serve": "^14.2.0"
+    "serve": "^14.2.0",
+    "typescript": "^5.0.4"
   }
 }

@@ -9,5 +9,29 @@
 
 <body>
 <h1>SQLite Wasm Playground</h1>
+
+
+<form id="sqliteConfigForm">
+  <div>
+    <label for="legacyClient">Legacy Client</label>
+    <input type="checkbox" id="legacyClient" name="legacyClient">
+  </div>
+
+  
+  <label for="clientType">Sqlite Client Type:</label>
+  <select id="clientType" name="clientType">
+    <option value="MEMORY">MEMORY</option>
+    <option value="OPFS">OPFS</option>
+    <option value="OPFS_SAH">OPFS_SAH</option>
+  </select>
+
+  <div>
+    <label for="useWorker">Use Worker</label>
+    <input type="checkbox" id="useWorker" name="useWorker">
+  </div>
+
+  <button type="button">Run SQLite</button>
+</form>
+
 </body>
 </html>
