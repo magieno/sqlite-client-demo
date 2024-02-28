@@ -20,15 +20,11 @@
   
   <label for="clientType">Sqlite Client Type:</label>
   <select id="clientType" name="clientType">
-    <option value="MEMORY">MEMORY</option>
+    <option value="MEMORY_MAIN">MEMORY_MAIN</option>
+    <option value="MEMORY_WORKER">MEMORY_WORKER</option>
     <option value="OPFS">OPFS</option>
     <option value="OPFS_SAH">OPFS_SAH</option>
   </select>
-
-  <div>
-    <label for="useWorker">Use Worker</label>
-    <input type="checkbox" id="useWorker" name="useWorker">
-  </div>
 
   <button type="button">Run SQLite</button>
 </form>
